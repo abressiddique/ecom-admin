@@ -1,76 +1,46 @@
-# Full Stack E-Commerce + Dashboard & CMS using React & Next.js (Admin)
+# E-Commerce Store admin
 
-The repository for my Full Stack E-Commerce website, I created this project following this [course](https://www.youtube.com/watch?v=5miHyP6lExg), but with my own little tweaks such as responsive Admin page.
+## Overview
 
-Features:
+A Next.js e-commerce website featuring modern UI components and smooth user experience. The project leverages Tailwind CSS for styling and Zustand for state management.
 
-* Admin dashboard is going to serve as both CMS, Admin and API
-* You will be able to control mulitple vendors / stores through this single CMS! (For example you can have a "Shoe store" and a "Laptop store" and a "Suit store", and our CMS will generate API routes for all of those individually)
-* You will be able to create, update and delete categories
-* You will be able to create, update and delete products
-* You will be able to upload multiple images for products, and change them whenever you want
-* You will be able to create, update and delete filters such as "Color" and "Size", and then match them in the "Product" creation form
-* You will be able to create, update and delete "Billboards" which are these big texts on top of the page. You will be able to attach them to a single category, or use them standalone (Our Admin generates API for all of those cases)
-* You will be able to Search through all categories, products, sizes, colors, billboards with included pagination
-* You will be able to control which products are "featured" so they show on the homepage
-* You will be able to see your orders, sales, etc
-* You will be able to see graphs of your revenue etc
-* Clerk Authentication
-* Order creation
-* Stripe checkout
-* Stripe webhooks
-* MySQL + Prisma + PlanetScale
+## Features
 
-## Prerequisites
+- Product Listings
+- User Authentication
+- Shopping Cart
+- Product Filtering and Sorting
+- Responsive Design
+- Checkout Process
+- Order History
+- User Profile Management
+- Admin Dashboard
+- Real-time Notifications
 
-**Node version 14.x**
+## Technologies
 
-## Cloning the repository
-```
-git clone https://github.com/aoyo-jun/e-commerce-admin.git
-```
-## Install packages
-```
-npm i
-```
-## Setup .env file
-Here you will need to insert your:
-* [Clerk](https://clerk.com/) Keys and URLs
-* Database URL (I used [PlanetScale](https://planetscale.com/), but you can use the database of your choice)
-* [Cloudinary](https://cloudinary.com/) Cloud Name
-* [Stripe](https://stripe.com/) API and Webhook Secret
-* Your frontend store URL (ex: localhost:3001)
+- **Frontend:** Next.js, Tailwind CSS, Zustand
+- **Utilities:** Axios, clsx, lucide-react, react-hot-toast
+- **Development Tools:** ESLint, TypeScript, PostCSS, Autoprefixer
 
-Just follow the corresponding documentation.
-```
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
-NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
+## Project Screenshots
 
-DATABASE_URL=''
-NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=""
-STRIPE_API_KEY=
-STRIPE_WEBHOOK_SECRET=
+Here are some screenshots of the project:
 
-FRONTEND_STORE_URL=
-```
-## Setup Prisma
-Add MySQL Database (I used PlanetScale)
-```
-npx prisma generate
-npx prisma db push
-```
-## Start the app
-```
-npm run dev
-```
-###### This README was partially copied from the original [next13-ecommerce-admin](https://github.com/AntonioErdeljac/next13-ecommerce-admin) repository.
+![Screenshot 1](ecommerce-store-main/demo/image1.png)
+![Screenshot 2](ecommerce-store-main/demo/image2.png)
+![Screenshot 3](ecommerce-store-main/demo/image3.png)
+![Screenshot 4](ecommerce-store-main/demo/image4.png)
+![Screenshot 5](ecommerce-store-main/demo/image5.png)
+![Screenshot 6](ecommerce-store-main/demo/image6.png)
+![Screenshot 7](ecommerce-store-main/demo/image7.png)
+![Screenshot 8](ecommerce-store-main/demo/image8.png)
+![Screenshot 9](ecommerce-store-main/demo/image9.png)
+![Screenshot 10](ecommerce-store-main/demo/image10.png)
 
-___
+## Installation
 
-Again, this amazing project is a [course](https://www.youtube.com/watch?v=5miHyP6lExg) by [Code with Antonio](https://www.youtube.com/@codewithantonio)!
+1. **Clone the Repository**
 
-Another project following this awesome developer (aka Antonio), thank you so much for the learning experience 🙏
+   ```bash
+   git clone https://github.com/abressiddique/ecommerce-store.git
